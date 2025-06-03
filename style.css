@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  
+}
+
+
+section {
+  scroll-margin-top: 70px;
+}
+
+/* Navbar */
+.custom-navbar {
+  background-color: #1f242d;
+  z-index: 1030; 
+}
+
+.nav-item a {
+  color: #ffff;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+.nav-item a:hover {
+  color: #00fbff !important;
+}
+
+.active-nav {
+  color: #00fbff !important;
+  font-weight: bold;
+  border-bottom: 2px solid #00fbff;
+}
+
+span {
+  color: #00fbff;
+}
+
+/* Home */
+#home {
+  padding: 2rem;
+  background-color: #323946;
+  color: #ffff;
+}
+
+/* About Me */
+.custom-about {
+  color: #ffff;
+}
+
+/* Project */
+#project {
+  color: #ffff;
+  background-color: #1f242d;
+}
+
+.custom-card {
+  background-color: #2c2f38;
+  color: #ffff;
+  border-left: 2px solid #00fbff;
+}
+
+.custom-img {
+  height: 200px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* Contact */
+.contact-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-card {
+  border: 1px solid #00fbff;
+  background-color: #1f242d;
+  color: white;
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  background-color: #111;
+  border-color: #00fbff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+/* Extra for responsive safety */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  section, .container, .row {
+    overflow-x: hidden;
+  }
+}
